@@ -1,6 +1,8 @@
 import streamlit as st
 import pickle
 import pandas as pd
+import sklearn
+from sklearn.model_selection import train_test_split
 
 @st.cache_resource
 def load_model(path: str):
